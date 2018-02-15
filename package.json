@@ -1,0 +1,40 @@
+{
+  "name": "get-blob-duration",
+  "version": "1.0.0",
+  "description": "Convenience method to patch Chromium bug when getting duration of HTML5 video or audio Blob.",
+  "main": "dist/getBlobDuration.js",
+  "scripts": {
+    "build": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evictor/get-blob-duration.git"
+  },
+  "keywords": [
+    "html5",
+    "video",
+    "audio",
+    "blob",
+    "mediastream",
+    "mediatrack",
+    "duration",
+    "length",
+    "seconds"
+  ],
+  "author": "Ezekiel Victor <zekevictor@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evictor/get-blob-duration/issues"
+  },
+  "homepage": "https://github.com/evictor/get-blob-duration#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "pump": "^3.0.0"
+  }
+}
