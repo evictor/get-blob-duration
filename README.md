@@ -1,6 +1,12 @@
 # get-blob-duration
 Convenience method to patch Chromium bug when getting duration of HTML5 video or audio Blob.
 
+# Installation 
+
+`npm install --save get-blob-duration`   
+or   
+`yarn add get-blob-duration`
+
 ## Usage
 
 Import the method however you like (browser, module, etc.). Once you have it in scope:
@@ -15,6 +21,9 @@ getBlobDuration(blob).then(function(duration) {
 Or use ECMAScript 6:
 
 ```javascript
+
+import getBlobDuration from 'get-blob-duration'
+
 // yada yada async
 const duration = await getBlobDuration(blob)
 console.log(duration + ' seconds')
