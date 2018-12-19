@@ -3,7 +3,7 @@
  *
  * @returns {Promise<Number>} Blob duration in seconds.
  */
-export default async function getBlobDuration(blob) {
+export default async function getBlobDuration(blob, { blobIsUrl = false }) {
   const tempVideoEl = document.createElement('video')
 
   const durationP = new Promise(resolve =>
@@ -23,7 +23,7 @@ export default async function getBlobDuration(blob) {
     })
   )
 
-  tempVideoEl.src = window.URL.createObjectURL(blob)
+  tempVideoEl.src = blobIsUrl ? blob : window.URL.createObjectURL(blob)
 
   return durationP
 }
