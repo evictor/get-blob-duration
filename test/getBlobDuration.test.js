@@ -29,6 +29,15 @@ it('should handle ordinary duration retrieval', async () => {
   expect(window.URL.createObjectURL).toHaveBeenCalledWith(mockBlob)
 })
 
+it('should handle ordinary duration retrieval', async () => {
+  dummyVideoEl.duration = 12345
+
+  const duration = await getBlobDuration(mockBlob, { blobIsUrl: true })
+  expect(duration).toBe(12345)
+
+  expect(window.URL.createObjectURL).not.toHaveBeenCalledWith(mockBlob)
+})
+
 it('should execute Chrome bugfix duration retrieval as needed', async () => {
   dummyVideoEl.duration = Infinity
 
