@@ -33,11 +33,14 @@
     "babel-cli": "^6.26.0",
     "babel-jest": "^22.2.2",
     "babel-preset-env": "^1.6.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-babel": "^7.0.1",
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0",
     "jest": "^22.3.0",
     "pump": "^3.0.0"
+  },
+  "jest": {
+    "testURL": "http://127.0.0.1"
   }
 }
