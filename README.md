@@ -19,3 +19,14 @@ Or use ECMAScript 6:
 const duration = await getBlobDuration(blob)
 console.log(duration + ' seconds')
 ```
+
+## Changelog
+
+### 1.0.1
+
+- Typescript defs (thanks [kandros](https://github.com/kandros))
+- Fix audits + gulp update to ^4.0.0
+
+### 1.0.0
+
+Initial release
