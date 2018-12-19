@@ -7,7 +7,7 @@
     "build": "gulp",
     "test": "jest --verbose"
   },
-  "typings": "typings.d.ts",
+  "typings": "get-blob-duration.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/evictor/get-blob-duration.git"
