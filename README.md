@@ -45,6 +45,12 @@ import getBlobDuration from 'get-blob-duration'
 
 ## Changelog
 
+### 1.1.0
+
+- Allow usage with blob URL - [kandros](https://github.com/kandros)
+- Typescript typings - [kandros](https://github.com/kandros)
+- Fix npm audits + various package upgrades
+
 ### 1.0.1
 
 - Typescript defs (thanks [kandros](https://github.com/kandros))
