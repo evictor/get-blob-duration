@@ -4,7 +4,9 @@ Convenience method to patch Chromium bug when getting duration of HTML5 video or
 # Installation 
 
 `npm install --save get-blob-duration`   
-or   
+
+or
+
 `yarn add get-blob-duration`
 
 ## Usage
@@ -21,12 +23,24 @@ getBlobDuration(blob).then(function(duration) {
 Or use ECMAScript 6:
 
 ```javascript
-
 import getBlobDuration from 'get-blob-duration'
 
-// yada yada async
-const duration = await getBlobDuration(blob)
-console.log(duration + ' seconds')
+(async function() {
+  const duration = await getBlobDuration(blob)
+  console.log(duration + ' seconds')
+})()
+```
+
+Or pass an object URL string if you already have one:
+
+```javascript
+import getBlobDuration from 'get-blob-duration'
+
+(async function() {
+  const blobUrl = 'blob:https://mdn.mozillademos.org/012345678-9abc-def0-1234-56789abcdef0'
+  const duration = await getBlobDuration(blobUrl)
+  console.log(duration + ' seconds')
+})()
 ```
 
 ## Changelog
