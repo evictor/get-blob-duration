@@ -41,6 +41,7 @@ it('should handle ordinary duration retrieval', async () => {
 it('should execute Chrome bugfix duration retrieval as needed', async () => {
   dummyVideoEl.duration = Infinity
 
+  // noinspection ES6MissingAwait
   const durationP = getBlobDuration(mockBlob)
   await new Promise(async resolve => {
     dummyVideoEl.duration = 98543

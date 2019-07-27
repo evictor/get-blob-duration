@@ -4,6 +4,7 @@ export type Options = {
 
 export interface GetBlobDurationInterface {
   (blob: Blob | string, options: Options): Promise<number>
+  (blob: Blob): Promise<number>
 }
 
 declare const getBlobDuration: GetBlobDurationInterface
