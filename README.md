@@ -45,6 +45,10 @@ import getBlobDuration from 'get-blob-duration'
 
 ## Changelog
 
+### 1.1.1
+
+- Update deps
+
 ### 1.1.0
 
 - Allow usage with blob URL - [kandros](https://github.com/kandros)
