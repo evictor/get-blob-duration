@@ -30,18 +30,18 @@
   },
   "homepage": "https://github.com/evictor/get-blob-duration#readme",
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/plugin-transform-runtime": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/runtime": "^7.5.5",
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-transform-runtime": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/runtime": "^7.10.2",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
-    "jest": "^24.8.0",
+    "jest": "^24.9.0",
     "pump": "^3.0.0",
-    "regenerator-runtime": "^0.13.3"
+    "regenerator-runtime": "^0.13.5"
   },
   "jest": {
     "testURL": "http://127.0.0.1"
