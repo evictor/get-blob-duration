@@ -1,6 +1,6 @@
 {
   "name": "get-blob-duration",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Convenience method to patch Chromium bug when getting duration of HTML5 video or audio Blob.",
   "main": "dist/getBlobDuration.js",
   "scripts": {
@@ -30,11 +30,11 @@
   },
   "homepage": "https://github.com/evictor/get-blob-duration#readme",
   "devDependencies": {
-    "@babel/cli": "^7.10.1",
-    "@babel/core": "^7.10.2",
-    "@babel/plugin-transform-runtime": "^7.10.1",
-    "@babel/preset-env": "^7.10.2",
-    "@babel/runtime": "^7.10.2",
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/runtime": "^7.10.5",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-sourcemaps": "^2.6.5",

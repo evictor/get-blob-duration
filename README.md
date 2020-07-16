@@ -45,6 +45,11 @@ import getBlobDuration from 'get-blob-duration'
 
 ## Changelog
 
+### 1.1.2
+
+- Bump lodash from 4.17.15 to 4.17.19 [pull #6](https://github.com/evictor/get-blob-duration/pull/6/files)
+- Audit fix + npm up
+
 ### 1.1.1
 
 - Update deps
