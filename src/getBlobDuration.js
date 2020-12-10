@@ -6,7 +6,7 @@
 export default async function getBlobDuration(blob) {
   const tempVideoEl = document.createElement('video')
 
-  const durationP = new Promise(resolve =>
+  const durationP = new Promise((resolve, reject) =>
     tempVideoEl.addEventListener('loadedmetadata', () => {
       // Chrome bug: https://bugs.chromium.org/p/chromium/issues/detail?id=642012
       if(tempVideoEl.duration === Infinity) {
@@ -16,6 +16,9 @@ export default async function getBlobDuration(blob) {
           resolve(tempVideoEl.duration)
           tempVideoEl.currentTime = 0
         }
+        tempVideoEl.addEventListener('error', (event) =>
+          reject(event.target.error)
+        )
       }
       // Normal behavior
       else
