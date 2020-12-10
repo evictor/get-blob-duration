@@ -11,11 +11,8 @@ beforeEach(() => {
   dummyVideoEl = jest.fn()
 
   dummyVideoEl.addEventListener = jest.fn((eventName, handler) => {
-    if(eventName === 'error') {
-      dummyVideoEl.error = () => handler(dummyErrorEventObject)
-    } else {
-      handler();
-    }
+    expect(eventName).toBe('loadedmetadata')
+    handler()
   })
 
   document.createElement = jest.fn(elType => {
@@ -66,6 +63,6 @@ it('should reject with the error object if an error occurs', async () => {
 
   // noinspection ES6MissingAwait
   const durationP = getBlobDuration(mockBlob)
-  dummyVideoEl.error()
+  dummyVideoEl.onerror(dummyErrorEventObject)
   expect(durationP).rejects.toMatch(dummyErrorEventObject.target.error)
 })

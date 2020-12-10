@@ -21,9 +21,7 @@ export default async function getBlobDuration(blob) {
       else
         resolve(tempVideoEl.duration)
     })
-    tempVideoEl.addEventListener('error', (event) =>
-      reject(event.target.error)
-    )
+    tempVideoEl.onerror = (event) => reject(event.target.error)
   })
 
   tempVideoEl.src = typeof blob === 'string' || blob instanceof String
