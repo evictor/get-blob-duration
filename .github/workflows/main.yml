@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on:
+      - ubuntu-latest
+      - macos-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install deps
+        run: npm i
+
+      - name: Build
+        run: npm run build
+
+      - name: Test
+        run: npm t
