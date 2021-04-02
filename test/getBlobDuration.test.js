@@ -64,5 +64,5 @@ it('should reject with the error object if an error occurs', async () => {
   // noinspection ES6MissingAwait
   const durationP = getBlobDuration(mockBlob)
   dummyVideoEl.onerror(dummyErrorEventObject)
-  expect(durationP).rejects.toMatch(dummyErrorEventObject.target.error)
+  await expect(durationP).rejects.toMatch(dummyErrorEventObject.target.error)
 })
