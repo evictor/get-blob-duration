@@ -8,16 +8,18 @@ on:
 
   workflow_dispatch:
 
+env:
+  NODE_ENV: development
+
 jobs:
-  build:
-    runs-on:
-      - ubuntu-latest
+  build-and-test:
+    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
 
       - name: Install deps
-        run: npm i
+        run: npm ci
 
       - name: Build
         run: npm run build
