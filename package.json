@@ -1,11 +1,12 @@
 {
   "name": "get-blob-duration",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Convenience method to patch Chromium bug when getting duration of HTML5 video or audio Blob.",
   "main": "dist/getBlobDuration.js",
   "scripts": {
     "build": "gulp",
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "preversion": "npm run build && npm t && git add -A dist"
   },
   "typings": "get-blob-duration.d.ts",
   "repository": {
