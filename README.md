@@ -45,6 +45,10 @@ import getBlobDuration from 'get-blob-duration'
 
 ## Changelog
 
+### <v.next>
+
+- **Misc:** Adopted MIT license
+
 ### 1.2.0
 
 - **Security:** Update deps
